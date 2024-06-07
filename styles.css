@@ -1,0 +1,308 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px; /* フォントサイズを大きくする */
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header, section, footer {
+    font-family: 'Merriweather', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    margin-top: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 中央揃えのため追加 */
+    flex-direction: column; /* 追加 */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em; /* フォントサイズを大きくする */
+    font-weight: bold;
+    line-height: 1; /* ロゴと高さを揃える */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* 中央揃えのため追加 */
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000; /* 文字色を黒に変更 */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em; /* フォントサイズを大きくする */
+}
+
+.nav-center {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 100px; /* ロゴの高さを倍にする */
+}
+
+.header-title {
+    font-size: 3em; /* フォントサイズを大きくする */
+    text-align: center;
+    flex: 1;
+}
+
+#hero {
+    background: url('your-image-url.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h2, #hero p {
+    color: #000; /* 文字色を黒に変更 */
+    font-size: 2.8em; /* フォントサイズを倍にする */
+}
+
+.small-text {
+    font-size: 1.2em; /* 文字サイズをやや小さくする */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 20px 0;
+    background-color: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em; /* フォントサイズを大きくする */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff9900;
+    color: white;
+}
+
+section {
+    padding: 70px 0;
+    background-color: #ccc;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.8em; /* フォントサイズを大きくする */
+    margin-bottom: 20px;
+}
+
+section p, section ul {
+    font-size: 1.4em; /* フォントサイズを大きくする */
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e9e9e9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.yellow-underline {
+    border-bottom: 2px solid yellow;
+    padding-bottom: 5px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-row img {
+    margin-right: 20px; /* 画像間のスペースを設定 */
+}
+
+.image-row img:last-child {
+    margin-right: 0; /* 最後の画像の右マージンを0に設定 */
+}
+
+.balanced-image {
+    width: 20%;
+    height: auto;
+}
+
+.wider-image {
+    width: 40%;
+    height: auto;
+}
+
+.centered-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; /* 画像背景色を調整 */
+    padding: 10px; /* 余白を追加 */
+    margin: 20px 0; /* 上下の余白を追加 */
+}
+
+.centered-image-wrapper img {
+    width: 40%;
+    height: auto;
+}
+
+#services {
+    background-color: #fff; /* プログラムの背景色を白に設定 */
+}
+
+#services .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#services .container div {
+    background-color: #fff;
+    width: 50%;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#pricing .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#pricing .container .pricing-plan {
+    width: 45%;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#pricing .container .basic-plan {
+    background-color: #fff;
+}
+
+#pricing .container .premium-plan {
+    background-color: #ffffe0; /* 薄い黄色 */
+}
+
+#pricing .container .minimum-plan {
+    background-color: #e0ffff; /* 薄い青 */
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .social a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 1.4em; /* フォントサイズを大きくする */
+}
+
+button[type="submit"]:hover {
+    background-color: #ff9900;
+    color: white;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    #hero h2 {
+        font-size: 2.5em; /* フォントサイズを大きくする */
+    }
+
+    #hero p {
+        font-size: 1.4em; /* フォントサイズを大きくする */
+    }
+
+    section h2 {
+        font-size: 2.5em; /* フォントサイズを大きくする */
+    }
+
+    #services .container div, #pricing .container .pricing-plan {
+        width: 90%;
+    }
+}
