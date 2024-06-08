@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 18px; /* フォントサイズを大きくする */
+    line-height: 1.8;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
@@ -28,21 +28,25 @@ header {
     padding: 1em 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* 中央揃えのため追加 */
+    flex-direction: column; /* 追加 */
 }
 
-header .header-title {
+header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em; /* フォントサイズを大きくする */
     font-weight: bold;
-    transform: translateY(-1em); /* 文字を上に移動 */
+    line-height: 1; /* ロゴと高さを揃える */
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 0 auto;
+    margin: 0;
     display: flex;
+    justify-content: center; /* 中央揃えのため追加 */
+    width: 100%;
 }
 
 nav ul li {
@@ -53,12 +57,23 @@ nav ul li a {
     color: #000; /* 文字色を黒に変更 */
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.4em; /* フォントサイズを大きくする */
+}
+
+.nav-center {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .logo {
-    height: 50px;
-    margin-right: 20px;
+    height: 100px; /* ロゴの高さを倍にする */
+}
+
+.header-title {
+    font-size: 3em; /* フォントサイズを大きくする */
+    text-align: center;
+    flex: 1;
 }
 
 #hero {
@@ -69,6 +84,11 @@ nav ul li a {
 
 #hero h2, #hero p {
     color: #000; /* 文字色を黒に変更 */
+    font-size: 2.8em; /* フォントサイズを倍にする */
+}
+
+.small-text {
+    font-size: 1.2em; /* 文字サイズをやや小さくする */
 }
 
 .cta-button {
@@ -79,7 +99,7 @@ nav ul li a {
     color: #000;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.4em; /* フォントサイズを大きくする */
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -96,12 +116,12 @@ section {
 
 section h2 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.8em; /* フォントサイズを大きくする */
     margin-bottom: 20px;
 }
 
 section p, section ul {
-    font-size: 1.2em;
+    font-size: 1.4em; /* フォントサイズを大きくする */
     line-height: 1.8;
     margin: 20px 0;
 }
@@ -116,6 +136,49 @@ ul li {
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
+}
+
+.yellow-underline {
+    border-bottom: 2px solid yellow;
+    padding-bottom: 5px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-row img {
+    margin-right: 20px; /* 画像間のスペースを設定 */
+}
+
+.image-row img:last-child {
+    margin-right: 0; /* 最後の画像の右マージンを0に設定 */
+}
+
+.balanced-image {
+    width: 20%;
+    height: auto;
+}
+
+.wider-image {
+    width: 40%;
+    height: auto;
+}
+
+.centered-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; /* 画像背景色を調整 */
+    padding: 10px; /* 余白を追加 */
+    margin: 20px 0; /* 上下の余白を追加 */
+}
+
+.centered-image-wrapper img {
+    width: 40%;
+    height: auto;
 }
 
 #services {
@@ -203,6 +266,7 @@ button[type="submit"] {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    font-size: 1.4em; /* フォントサイズを大きくする */
 }
 
 button[type="submit"]:hover {
@@ -227,15 +291,15 @@ button[type="submit"]:hover {
     }
 
     #hero h2 {
-        font-size: 2em;
+        font-size: 2.5em; /* フォントサイズを大きくする */
     }
 
     #hero p {
-        font-size: 1.2em;
+        font-size: 1.4em; /* フォントサイズを大きくする */
     }
 
     section h2 {
-        font-size: 2em;
+        font-size: 2.5em; /* フォントサイズを大きくする */
     }
 
     #services .container div, #pricing .container .pricing-plan {
