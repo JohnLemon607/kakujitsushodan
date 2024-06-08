@@ -28,12 +28,14 @@ header {
     padding: 1em 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-header h1 {
+header .header-title {
     margin: 0;
     font-size: 2.5em;
     font-weight: bold;
+    transform: translateY(-1em); /* 文字を上に移動 */
 }
 
 nav ul {
@@ -114,21 +116,6 @@ ul li {
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
-}
-
-.image-row {
-    display: flex;
-    justify-content: space-around;
-}
-
-.wider-image {
-    width: 45%;
-    height: auto;
-}
-
-.centered-image-wrapper {
-    display: flex;
-    justify-content: center;
 }
 
 #services {
@@ -249,16 +236,6 @@ button[type="submit"]:hover {
 
     section h2 {
         font-size: 2em;
-    }
-
-    .image-row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .wider-image {
-        width: 90%;
-        margin-bottom: 20px;
     }
 
     #services .container div, #pricing .container .pricing-plan {
